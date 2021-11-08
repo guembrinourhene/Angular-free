@@ -1,0 +1,35 @@
+<div class="container">
+    <br><br><h3>Create Users</h3>
+    <br>
+    <form >
+        <small class="txt-danger"></small>
+        <h5>nom</h5>
+        <div class="form-group">
+          <div class="input-group input-group-alternative mb-3">
+            <input class="form-control" placeholder="Nom" type="text" name="nom" >
+          </div>
+        </div>
+        <h5>Description</h5>
+        <div class="form-group">
+        <div class="input-group input-group-alternative mb-3">
+            <textarea  class="form-control" placeholder="" type="text"  name="description" ></textarea>
+          </div>
+        </div>
+        <h5 >DateDebut</h5>
+        <div class="form-group">
+          <div class="input-group input-group-alternative mb-3">
+              <input  class="form-control" placeholder="DateDebut" type="date" name="dateDebut" >
+            </div>
+          </div>
+          <h5>DateFin</h5>
+          <div class="form-group">
+            <div class="input-group input-group-alternative mb-3">
+                <input  class="form-control" placeholder="DateFin" type="date" name="dateFin" >
+              </div>
+          </div>
+        <div>
+          <button type="submit"  class="btn btn-primary mt-4">Create</button>
+        </div>
+      </form>
+    </div>
+    <router-outlet></router-outlet>
