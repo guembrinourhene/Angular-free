@@ -15,7 +15,8 @@ const routes: Routes = [{path:'home', component: HomeComponent},
   { path: 'categorie', loadChildren: () => import('./categorie/categorie.module').then(m => m.CategorieModule) },
   { path: 'projet', loadChildren: () => import('./projet/projet.module').then(m => m.ProjetModule) },
   { path: 'developpeur', loadChildren: () => import('./developpeur/developpeur.module').then(m => m.DeveloppeurModule) },
-  { path: 'profil', loadChildren: () => import('./profil/profil.module').then(m => m.ProfilModule) }
+  { path: 'profil', loadChildren: () => import('./profil/profil.module').then(m => m.ProfilModule) },
+  { path: 'client', loadChildren: () => import('./client/client.module').then(m => m.ClientModule) }
 
 
  ]
