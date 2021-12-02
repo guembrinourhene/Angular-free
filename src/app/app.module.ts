@@ -6,6 +6,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { NavbarComponent } from './navbar/navbar.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { HomeComponent } from './home/home.component';
+import { LoginComponent } from './login/login.component';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -14,11 +16,13 @@ import { HomeComponent } from './home/home.component';
     NavbarComponent,
     DashboardComponent,
     HomeComponent,
+    LoginComponent,
  
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
