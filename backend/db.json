@@ -75,5 +75,43 @@
           "image":"https://media.licdn.com/media/AAYQAQSOAAgAAQAAAAAAAB-zrMZEDXI2T62PSuT6kpB6qg.png"
         }
         
+      ],
+      "client":[
+        {
+          "id": "1",
+          "nom": "salhi",
+          "prenom":"amine",
+          "tel":"29298888",
+          "email":"salhiamine@gmail.com",
+          "description":"amine est un client"
+        },
+        {
+          "id": "2",
+          "nom": "zbidi",
+          "prenom":"khalil",
+          "tel":"95388028",
+          "email":"zbidikhalil@gmail.com",
+          "description": "khalil est un client"
+
+       
+        },
+        {
+            "id": "3",
+            "nom": "habchi",
+            "prenom":"zouhaier",
+            "tel":"55481235",
+            "email":"zouhaierhabchi@gmail.com",
+            "description": "zouhaier est un client"
+        },
+        {
+          "id": "4",
+          "nom": "memi",
+          "prenom":"rami",
+          "tel":"55485285",
+          "email":"ramimemi@hotmail.com",
+          "description": "rami est un client"
+      }
+        
       ]
-}
+
+    }
