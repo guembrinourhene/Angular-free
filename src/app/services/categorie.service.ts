@@ -12,8 +12,8 @@ export class CategorieService {
   constructor(private http: HttpClient) { }
 
   /**
-   * Get all courses
-   * @returns Observable<Course[]>
+   * Get all categories
+   * @returns Observable<Categorie[]>
    */
   all() {
     return this.http.get(this.apiUrl);
@@ -21,9 +21,9 @@ export class CategorieService {
 
 
   /**
-   * Get a course with the given id
-   * @param id : course id
-   * @returns Observable<Course>
+   * Get a categorie with the given id
+   * @param id : categorie id
+   * @returns Observable<Categorie>
    */
   get(id: string) {
     return this.http.get(this.apiUrl + '/' + id)
