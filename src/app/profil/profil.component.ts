@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import profils from './profil-list';
 
 @Component({
   selector: 'app-profil',
@@ -7,9 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProfilComponent implements OnInit {
 
+  public profilList= profils;
   constructor() { }
 
   ngOnInit(): void {
+    console.log(this.profilList)
   }
 
 }
