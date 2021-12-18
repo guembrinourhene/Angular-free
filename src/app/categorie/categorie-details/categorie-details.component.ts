@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { Categories } from 'src/app/categorie.model';
-import categories from '../categorie-list';
+import { CategorieService } from 'src/app/services/categorie.service';
 
 
 @Component({
@@ -11,14 +10,17 @@ import categories from '../categorie-list';
 })
 export class CategorieDetailsComponent implements OnInit {
 
-  public categories?: Categories;
-  constructor(private route: ActivatedRoute) { }
+  public categories?: any;
+  constructor(private route: ActivatedRoute,private categorieService:CategorieService) { }
 
   ngOnInit(): void {
     this.route.paramMap.subscribe(params =>{
-        const categoriesId= params.get("id");
-        this.categories =categories.filter(categories => categories.id === categoriesId)[0]
-      });
+     
+         const categorieId = params.get('id');
+         this.categorieService.get(categorieId!).subscribe(categories => this.categories = categories);
+        });
+      }
+    
   }
 
-}
+
