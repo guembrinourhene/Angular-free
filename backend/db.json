@@ -76,6 +76,7 @@
         }
         
       ],
+
       "client":[
         {
           "id": "1",
@@ -115,3 +116,27 @@
       ]
 
     }
+=======
+
+      "profils" : [
+        { 
+          "id": "1",
+          "nom": "Ahmed",
+          "description":
+         " ahmed est l administrateur",
+          "image":
+            "https://freelanceur.fr/storage/images/avatar/no-avatar.png"
+        },
+        { 
+          "id": "2",
+          "nom": "mohamed",
+          "description":
+          "mohamed est un freelancer",
+          "image":
+            "https://freelanceur.fr/storage/images/avatar/no-avatar.png"
+        }
+      
+    ]
+    
+}
+>>>>>>> aaea99b59b3c5ead46a15cd4f07e23ad0b7e64dc

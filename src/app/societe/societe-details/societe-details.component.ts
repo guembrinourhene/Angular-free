@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { SocieteService } from 'src/app/services/societe.service';
 import { Societes } from 'src/app/societe.model';
 import societes from '../societe-list';
 
@@ -10,8 +11,8 @@ import societes from '../societe-list';
 })
 export class SocieteDetailsComponent implements OnInit {
 
-  public societes?: Societes;
-  constructor(private route: ActivatedRoute) { }
+  public societes?: any;
+  constructor(private route: ActivatedRoute, private societeService: SocieteService) { }
 
   ngOnInit(): void {
     this.route.paramMap.subscribe(params =>{
