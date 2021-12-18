@@ -32,16 +32,16 @@ export class ProfilsService {
 
   /**
    * Create a new categorie
-   * @param categorie new categorie to create
+   * @param profile new categorie to create
    */
-  create(categorie: any) {
-    return this.http.post(this.apiUrl, categorie);
+  create(profile: any) {
+    return this.http.post(this.apiUrl, profile);
   }
 
   /**
-   * Update a categorie with the given id
-   * @param id categorie id to update
-   * @param categorie new categorie data
+   * Update a profil with the given id
+   * @param id profil id to update
+   * @param profil new categorie data
    */
   update(id: string, nom: any) {
     return this.http.put(this.apiUrl + '/' + id, nom);
