@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { SocieteService } from '../services/societe.service';
 import societes from './societe-list';
 
 @Component({
@@ -8,11 +9,14 @@ import societes from './societe-list';
 })
 export class SocieteComponent implements OnInit {
 
-  public societeList= societes;
-  constructor() { }
+  public societeList: any = [];
+  constructor(private societeService:SocieteService) { }
 
   ngOnInit(): void {
-    console.log(this.societeList)
+    //console.log(this.societeList)
+    this.societeService.all().subscribe(
+      res => this.societeList = res
+    );
   }
 
 }
